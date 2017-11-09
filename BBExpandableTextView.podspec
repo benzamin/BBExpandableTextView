@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name     = 'BBExpandableTextView'
   s.version  = '1.0'
-  s.license  = 'MIT'
+  #s.license  = 'MIT'
   s.description  = <<-DESC
             Storyboard based easy to use UITextView subclass that is keyboard-aware & has placeholder-text capability..
                    DESC

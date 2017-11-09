@@ -13,7 +13,7 @@ $ gem install cocoapods
 If you already have a Podfile, add the following line in your podfile:
 
 ```ruby
-pod 'BBExpandableTextView'
+pod 'BBExpandableTextView', :git => 'https://github.com/benzamin/BBExpandableTextView.git'
 ```
 
 If you already dont have a podfile, To integrate BBExpandableTextView into your Xcode project using CocoaPods, create and add it in your `Podfile`:
@@ -21,9 +21,10 @@ If you already dont have a podfile, To integrate BBExpandableTextView into your 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
+#use_frameworks!
 
 target 'YourTargetName' do
-pod 'BBExpandableTextView'
+pod 'BBExpandableTextView', :git => 'https://github.com/benzamin/BBExpandableTextView.git'
 end
 ```
 
@@ -33,6 +34,9 @@ Then, run the following command:
 $ pod install
 ```
 And the pod should be installed in your project. **PLEASE NOTE:** Close the yourProject.xcodeProj and open the yourProject.xcworkspace, as the pod has been initiated, from now one use the yourProject.xcworkspace to work with. Please refer to [CocoaPods](http://cocoapods.org) for detailed info.
+
+#### NOTE: 
+In some cases you might see error in your storyboard app saying BBExpandableTextView can't be rendered. If you don't see the storyboard UI is not updating correctly, uncomment the "#use_frameworks!" to "use_frameworks!" and run "pod install".
 
 #### Manual Installation
 Just add the BBExpandableTextView.h and BBExpandableTextView.m files in your project [From Here](https://github.com/benzamin/BBExpandableTextView/tree/master/BBExpandableTextView/Classes). Drag a UITextView in your storeyboard and set its class as BBExpandableTextView.
