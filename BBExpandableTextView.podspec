@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   
   s.public_header_files = 'BBExpandableTextView/Classes/BBExpandableTextView.h'
   s.source_files  = "BBExpandableTextView/Classes/BBExpandableTextView.{h,m}"
-  s.platform     = :ios, "7.0"
+  s.ios.deployment_target = '7.0'
   end
