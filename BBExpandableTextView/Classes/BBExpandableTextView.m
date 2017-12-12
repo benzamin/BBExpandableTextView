@@ -153,7 +153,8 @@
 
     //move the main view, so that the keyboard does not hide it.
     float screenHeight = [UIScreen mainScreen].bounds.size.height;
-    //CGPoint textFieldXYPointInWindow = [textView convertPoint:CGPointMake(0, 0) toView:nil];
+//    CGPoint textFieldXYPointInWindow = [self convertPoint:CGPointMake(0, 0) toView:[self viewController].view];
+//    float textFiledBottomPoint = textFieldXYPointInWindow.y + self.initialHeightOfSelf;
     float textFiledBottomPoint = self.frame.origin.y + self.initialHeightOfSelf;
     float threashold = screenHeight - (textFiledBottomPoint + _expandHeight - 20);
     
