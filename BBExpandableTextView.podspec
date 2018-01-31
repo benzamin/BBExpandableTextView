@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/benzamin/BBExpandableTextView.git', :tag => s.version }
   s.requires_arc = true
   
-  s.public_header_files = 'BBExpandableTextView/Classes/BBExpandableTextView.h, BBExpandableTextView/Classes/BBKeyboardAwareTextField.h'
-  s.source_files  = "BBExpandableTextView/Classes/BBExpandableTextView.{h,m}, BBExpandableTextView/Classes/BBKeyboardAwareTextField.{h,m}"
+  s.public_header_files = 'BBExpandableTextView/Classes/BBExpandableTextView.h', 'BBExpandableTextView/Classes/BBKeyboardAwareTextField.h'
+  s.source_files  = 'BBExpandableTextView/Classes/BBExpandableTextView.*h', 'BBExpandableTextView/Classes/BBKeyboardAwareTextField.*m'
   s.ios.deployment_target = '7.0'
   end
