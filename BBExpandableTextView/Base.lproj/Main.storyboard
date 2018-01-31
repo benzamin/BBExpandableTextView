@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FBM-78-L1A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FBM-78-L1A">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -57,8 +57,64 @@
                                     <segue destination="Zws-uK-noI" kind="show" id="oGy-oA-pmd"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7RS-CF-a2i" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="16" y="200" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showDoneButtonOnTop" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gap Threshold-Default,Anim Duration-Default" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ioj-1o-oQh" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="16" y="509" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gap Threshold-0, Anim Duration-2 sec" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HpP-KV-1hn" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="16" y="577" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gapThreshold">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gap Threshold-Default" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXX-GZ-35T" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="132" y="364" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gapThreshold">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gap Threshold-0, Anim Duration-2 sec" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-ik-9j0" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.76470588240000004" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L2b-ik-9j0" secondAttribute="trailing" constant="16" id="Uyv-28-r2O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L2b-ik-9j0" secondAttribute="bottom" constant="20" id="t3v-PH-5xD"/>
+                            <constraint firstItem="L2b-ik-9j0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wrR-4l-xNa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="BBExpandableTextView" id="UJg-Z6-R9p"/>
@@ -82,37 +138,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some TextFields" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXp-Gn-Kat">
-                                <rect key="frame" x="16" y="191" width="351" height="17"/>
+                                <rect key="frame" x="16" y="185" width="351" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expandable TextView with Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYe-NP-yr3">
-                                <rect key="frame" x="8" y="310" width="359" height="17"/>
+                                <rect key="frame" x="8" y="298" width="359" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Just sample TextField" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAG-gL-vsc">
-                                <rect key="frame" x="16" y="212" width="209" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Just sample TextField" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAG-gL-vsc" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="16" y="206" width="209" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Zws-uK-noI" id="A23-pT-pMx"/>
-                                </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YET ANOTHER SAMPLE TEXTFIELD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yRc-Nf-f8C">
-                                <rect key="frame" x="16" y="250" width="279" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YET ANOTHER SAMPLE TEXTFIELD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yRc-Nf-f8C" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="16" y="244" width="279" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Zws-uK-noI" id="xQB-re-4Kz"/>
-                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Md8-LS-1Gf" customClass="BBExpandableTextView">
-                                <rect key="frame" x="8" y="331" width="359" height="45"/>
+                                <rect key="frame" x="8" y="319" width="359" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="x4t-13-UNE"/>
@@ -139,7 +189,7 @@
                                 </connections>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K9b-te-qOV" customClass="BBExpandableTextView">
-                                <rect key="frame" x="36" y="496" width="303" height="45"/>
+                                <rect key="frame" x="36" y="478" width="303" height="45"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="L4k-95-ec5"/>
@@ -162,20 +212,20 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Another 2 textViews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGJ-Is-ysE">
-                                <rect key="frame" x="16" y="406" width="351" height="17"/>
+                                <rect key="frame" x="16" y="388" width="351" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0l-PR-Ht7">
-                                <rect key="frame" x="36" y="540" width="303" height="1"/>
+                                <rect key="frame" x="36" y="522" width="303" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="bdJ-aQ-dl3"/>
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kg1-zw-gGA" customClass="BBExpandableTextView">
-                                <rect key="frame" x="16" y="427" width="343" height="42"/>
+                                <rect key="frame" x="16" y="409" width="343" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="TQk-WR-7m0"/>
@@ -223,6 +273,60 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number &amp; Punchuation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xpV-Ib-SEP" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="8" y="540" width="171" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Pad, Gap-Default" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zFf-pk-FX5" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="192.5" y="540" width="177.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address, Gap-20" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-Dp-p13" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="172" y="578" width="170" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gapThreshold">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Decimal Pad, Gap-0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLY-tH-ycU" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="8" y="578" width="150.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gapThreshold">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Phone Pad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dk2-Ww-QoB" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="8" y="616" width="132" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Default Keyboard, Gap-50" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JrD-CX-7dx" customClass="BBKeyboardAwareTextField">
+                                <rect key="frame" x="153.5" y="616" width="190.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gapThreshold">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -231,30 +335,42 @@
                             <constraint firstItem="YAw-NW-VL9" firstAttribute="leading" secondItem="NK9-x6-4Z1" secondAttribute="leading" constant="16" id="3zN-UT-JjK"/>
                             <constraint firstItem="Md8-LS-1Gf" firstAttribute="leading" secondItem="NK9-x6-4Z1" secondAttribute="leading" constant="8" id="4vA-La-SRt"/>
                             <constraint firstItem="NK9-x6-4Z1" firstAttribute="trailing" secondItem="EGJ-Is-ysE" secondAttribute="trailing" constant="8" id="5vT-PH-Ge9"/>
+                            <constraint firstItem="Z8N-Dp-p13" firstAttribute="top" secondItem="zFf-pk-FX5" secondAttribute="bottom" constant="8" id="6Ie-yd-fAi"/>
                             <constraint firstItem="NK9-x6-4Z1" firstAttribute="trailing" secondItem="mXp-Gn-Kat" secondAttribute="trailing" constant="8" id="6RD-p9-6PM"/>
                             <constraint firstItem="TXd-cR-Hl5" firstAttribute="top" secondItem="YAw-NW-VL9" secondAttribute="bottom" constant="4" id="7pF-1t-JHA"/>
+                            <constraint firstItem="dk2-Ww-QoB" firstAttribute="top" secondItem="WLY-tH-ycU" secondAttribute="bottom" constant="8" id="88w-LN-F2N"/>
                             <constraint firstItem="k0l-PR-Ht7" firstAttribute="bottom" secondItem="K9b-te-qOV" secondAttribute="bottom" id="8tY-VD-GUx"/>
                             <constraint firstItem="yRc-Nf-f8C" firstAttribute="leading" secondItem="eAG-gL-vsc" secondAttribute="leading" id="9DB-YL-h9g"/>
+                            <constraint firstItem="dk2-Ww-QoB" firstAttribute="leading" secondItem="NK9-x6-4Z1" secondAttribute="leading" constant="8" id="9PM-W2-2aj"/>
+                            <constraint firstItem="JrD-CX-7dx" firstAttribute="leading" secondItem="dk2-Ww-QoB" secondAttribute="trailing" constant="13.5" id="BW8-op-Agl"/>
                             <constraint firstItem="K9b-te-qOV" firstAttribute="leading" secondItem="NK9-x6-4Z1" secondAttribute="leading" constant="36" id="D8p-zq-CyC"/>
                             <constraint firstItem="NK9-x6-4Z1" firstAttribute="trailing" secondItem="yRc-Nf-f8C" secondAttribute="trailing" constant="80" id="H0s-Pf-WXL"/>
                             <constraint firstItem="mXp-Gn-Kat" firstAttribute="leading" secondItem="TXd-cR-Hl5" secondAttribute="leading" id="JGb-gr-oCQ"/>
+                            <constraint firstItem="Z8N-Dp-p13" firstAttribute="leading" secondItem="WLY-tH-ycU" secondAttribute="trailing" constant="13.5" id="JIM-rk-PRd"/>
                             <constraint firstItem="Kg1-zw-gGA" firstAttribute="top" secondItem="EGJ-Is-ysE" secondAttribute="bottom" constant="4" id="K2b-qO-XRN"/>
                             <constraint firstItem="YAw-NW-VL9" firstAttribute="top" secondItem="NK9-x6-4Z1" secondAttribute="top" constant="16" id="K9a-AE-fQe"/>
-                            <constraint firstItem="EYe-NP-yr3" firstAttribute="top" secondItem="yRc-Nf-f8C" secondAttribute="bottom" constant="30" id="L08-Do-V33"/>
+                            <constraint firstItem="EYe-NP-yr3" firstAttribute="top" secondItem="yRc-Nf-f8C" secondAttribute="bottom" constant="24" id="L08-Do-V33"/>
+                            <constraint firstItem="WLY-tH-ycU" firstAttribute="top" secondItem="xpV-Ib-SEP" secondAttribute="bottom" constant="8" id="LIQ-XB-lv6"/>
+                            <constraint firstItem="xpV-Ib-SEP" firstAttribute="leading" secondItem="NK9-x6-4Z1" secondAttribute="leading" constant="8" id="Ngh-1N-kdp"/>
                             <constraint firstItem="yRc-Nf-f8C" firstAttribute="top" secondItem="eAG-gL-vsc" secondAttribute="bottom" constant="8" id="QGl-EB-1eU"/>
                             <constraint firstItem="NK9-x6-4Z1" firstAttribute="trailing" secondItem="Kg1-zw-gGA" secondAttribute="trailing" constant="16" id="Qgc-Qi-jaL"/>
                             <constraint firstItem="Md8-LS-1Gf" firstAttribute="leading" secondItem="NK9-x6-4Z1" secondAttribute="leading" constant="8" id="S2I-Ik-Qbs"/>
+                            <constraint firstItem="WLY-tH-ycU" firstAttribute="leading" secondItem="NK9-x6-4Z1" secondAttribute="leading" constant="8" id="T2H-MZ-cWc"/>
+                            <constraint firstItem="zFf-pk-FX5" firstAttribute="top" secondItem="K9b-te-qOV" secondAttribute="bottom" constant="17" id="UEA-Wc-KkY"/>
+                            <constraint firstItem="xpV-Ib-SEP" firstAttribute="top" secondItem="K9b-te-qOV" secondAttribute="bottom" constant="17" id="W2L-nT-mzK"/>
                             <constraint firstItem="NK9-x6-4Z1" firstAttribute="trailing" secondItem="eAG-gL-vsc" secondAttribute="trailing" constant="150" id="dzd-C6-tmN"/>
                             <constraint firstAttribute="trailing" secondItem="YAw-NW-VL9" secondAttribute="trailing" constant="8" id="hoq-n6-31j"/>
+                            <constraint firstItem="zFf-pk-FX5" firstAttribute="leading" secondItem="xpV-Ib-SEP" secondAttribute="trailing" constant="13.5" id="jY1-In-B8M"/>
                             <constraint firstItem="NK9-x6-4Z1" firstAttribute="trailing" secondItem="K9b-te-qOV" secondAttribute="trailing" constant="36" id="lTg-Oy-cqP"/>
                             <constraint firstItem="EGJ-Is-ysE" firstAttribute="leading" secondItem="NK9-x6-4Z1" secondAttribute="leading" constant="16" id="mKT-iq-pzN"/>
-                            <constraint firstItem="mXp-Gn-Kat" firstAttribute="top" secondItem="TXd-cR-Hl5" secondAttribute="bottom" constant="30" id="mea-6Q-ZCk"/>
+                            <constraint firstItem="mXp-Gn-Kat" firstAttribute="top" secondItem="TXd-cR-Hl5" secondAttribute="bottom" constant="24" id="mea-6Q-ZCk"/>
                             <constraint firstItem="Kg1-zw-gGA" firstAttribute="leading" secondItem="NK9-x6-4Z1" secondAttribute="leading" constant="16" id="mr2-aM-97r"/>
                             <constraint firstItem="TXd-cR-Hl5" firstAttribute="leading" secondItem="YAw-NW-VL9" secondAttribute="leading" id="n9W-4h-CCa"/>
-                            <constraint firstItem="EGJ-Is-ysE" firstAttribute="top" secondItem="Md8-LS-1Gf" secondAttribute="bottom" constant="30" id="oFr-0t-Gqw"/>
+                            <constraint firstItem="EGJ-Is-ysE" firstAttribute="top" secondItem="Md8-LS-1Gf" secondAttribute="bottom" constant="24" id="oFr-0t-Gqw"/>
                             <constraint firstItem="k0l-PR-Ht7" firstAttribute="leading" secondItem="K9b-te-qOV" secondAttribute="leading" id="pt5-ud-3Xq"/>
                             <constraint firstItem="EYe-NP-yr3" firstAttribute="leading" secondItem="NK9-x6-4Z1" secondAttribute="leading" constant="8" id="qcx-Dj-Kf2"/>
                             <constraint firstItem="NK9-x6-4Z1" firstAttribute="trailing" secondItem="EYe-NP-yr3" secondAttribute="trailing" constant="8" id="qk8-wq-aJJ"/>
+                            <constraint firstItem="JrD-CX-7dx" firstAttribute="top" secondItem="Z8N-Dp-p13" secondAttribute="bottom" constant="8" id="uNj-7R-OVR"/>
                             <constraint firstItem="K9b-te-qOV" firstAttribute="top" secondItem="Kg1-zw-gGA" secondAttribute="bottom" constant="27" id="vIY-BN-Y7X"/>
                             <constraint firstItem="eAG-gL-vsc" firstAttribute="leading" secondItem="mXp-Gn-Kat" secondAttribute="leading" id="xEW-IP-3a9"/>
                             <constraint firstItem="eAG-gL-vsc" firstAttribute="top" secondItem="mXp-Gn-Kat" secondAttribute="bottom" constant="4" id="y1T-4d-3eh"/>

@@ -14,7 +14,7 @@
 
 @interface BBExpandableTextView()<UITextViewDelegate>
 @property(nonatomic, assign) CGFloat viewMoveUpOffsetForKeyboard; //for keeping track of the keyboard's view push height
-@property(nonatomic, assign) CGFloat initialHeightOfSelf; //for keeping track of the keyboard's view push height
+@property(nonatomic, assign) CGFloat initialHeightOfSelf; //for keeping track of the keyboard's height
 @property(nonatomic, assign) CGFloat initialBorderWidth;
 @property(nonatomic, assign) CGColorRef initialBorderColor;
 @property(nonatomic, assign) CGFloat initialCornerRadius;

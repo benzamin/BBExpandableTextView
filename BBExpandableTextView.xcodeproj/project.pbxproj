@@ -16,6 +16,7 @@
 		FE53C9B51FA8488100941969 /* BBExpandableTextViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE53C9B41FA8488100941969 /* BBExpandableTextViewUITests.m */; };
 		FE53C9C11FA849C300941969 /* BBExpandableTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE53C9C01FA849C300941969 /* BBExpandableTextView.m */; };
 		FE53C9C51FA871F500941969 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE53C9C41FA871F500941969 /* SecondViewController.m */; };
+		FE96EA8D202096F8009C0961 /* BBKeyboardAwareTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FE96EA8C202096F8009C0961 /* BBKeyboardAwareTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		FE53C9C01FA849C300941969 /* BBExpandableTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBExpandableTextView.m; sourceTree = "<group>"; };
 		FE53C9C31FA871F500941969 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		FE53C9C41FA871F500941969 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FE96EA8B202096F8009C0961 /* BBKeyboardAwareTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBKeyboardAwareTextField.h; sourceTree = "<group>"; };
+		FE96EA8C202096F8009C0961 /* BBKeyboardAwareTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBKeyboardAwareTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 			children = (
 				FE53C9BF1FA849C300941969 /* BBExpandableTextView.h */,
 				FE53C9C01FA849C300941969 /* BBExpandableTextView.m */,
+				FE96EA8B202096F8009C0961 /* BBKeyboardAwareTextField.h */,
+				FE96EA8C202096F8009C0961 /* BBKeyboardAwareTextField.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				FE53C9C11FA849C300941969 /* BBExpandableTextView.m in Sources */,
 				FE53C9AB1FA8488100941969 /* main.m in Sources */,
 				FE53C99D1FA8488100941969 /* AppDelegate.m in Sources */,
+				FE96EA8D202096F8009C0961 /* BBKeyboardAwareTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
