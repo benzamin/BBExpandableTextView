@@ -115,7 +115,7 @@
     CGPoint textViewXYPointInWindow = [self convertPoint:CGPointMake(0, 0) toView:[self viewController].view];
     float textViewBottomPoint = textViewXYPointInWindow.y;
     //float textFiledBottomPoint = self.frame.origin.y;
-    float threashold = screenHeight - textViewBottomPoint;
+    float threashold = screenHeight - (textViewBottomPoint+20);
     
         if  (threashold < _keyboardHeight)
         {
