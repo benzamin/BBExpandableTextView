@@ -117,7 +117,7 @@
     //float textFiledBottomPoint = self.frame.origin.y;
     float threashold = screenHeight - (textViewBottomPoint+20);
     
-        if  (threashold < _keyboardHeight)
+        if  ((threashold-self.gapThreshold) < _keyboardHeight)
         {
             self.viewMoveUpOffsetForKeyboard = (_keyboardHeight - threashold) + self.frame.size.height;
             if(self.frame.origin.y >= 0)
